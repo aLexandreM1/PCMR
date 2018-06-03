@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
+import { PCsComponent } from './pcs/pcs.component';
+import { PCComponent } from './pcs/pc/pc.component';
+import { PCListComponent } from './pcs/pc-list/pc-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PCsComponent,
+    PCComponent,
+    PCListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
