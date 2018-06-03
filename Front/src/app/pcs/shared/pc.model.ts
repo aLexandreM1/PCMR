@@ -3,6 +3,6 @@ export class PC {
     Brand:string; 
     Model:string;
     Process:string; 
-    ProcessSpeed:number; 
+    ProcessSpeed:string; 
     ImgUrl:string;
 }
