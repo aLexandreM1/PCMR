@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PCModelStoreContainer" CdmEntityContainer="PCManagerDBEntities">
+    <EntitySetMapping Name="PCS">
+      <EntityTypeMapping TypeName="PCModel.PCS">
+        <MappingFragment StoreEntitySet="PCS">
+          <ScalarProperty Name="PCID" ColumnName="PCID" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Mobo" ColumnName="Mobo" />
+          <ScalarProperty Name="RAM" ColumnName="RAM" />
+          <ScalarProperty Name="HDD" ColumnName="HDD" />
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
