@@ -4,7 +4,7 @@
     <EntitySetMapping Name="PCS">
       <EntityTypeMapping TypeName="PCModel.PCS">
         <MappingFragment StoreEntitySet="PCS">
-          <ScalarProperty Name="PCID" ColumnName="PCID" />
+          <ScalarProperty Name="PcID" ColumnName="PCID" />
           <ScalarProperty Name="Brand" ColumnName="Brand" />
           <ScalarProperty Name="Model" ColumnName="Model" />
           <ScalarProperty Name="Mobo" ColumnName="Mobo" />

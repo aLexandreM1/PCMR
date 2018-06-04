@@ -28,9 +28,9 @@
       <Schema Namespace="PCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="PCS">
           <Key>
-            <PropertyRef Name="PCID" />
+            <PropertyRef Name="PcID" />
           </Key>
-          <Property Name="PCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PcID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Brand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Mobo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -51,7 +51,7 @@
           <EntitySetMapping Name="PCS">
             <EntityTypeMapping TypeName="PCModel.PCS">
               <MappingFragment StoreEntitySet="PCS">
-                <ScalarProperty Name="PCID" ColumnName="PCID" />
+                <ScalarProperty Name="PcID" ColumnName="PCID" />
                 <ScalarProperty Name="Brand" ColumnName="Brand" />
                 <ScalarProperty Name="Model" ColumnName="Model" />
                 <ScalarProperty Name="Mobo" ColumnName="Mobo" />

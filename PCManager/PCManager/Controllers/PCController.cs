@@ -29,12 +29,12 @@ namespace PCManager.Controllers
         public IHttpActionResult PutPCS(int id, PCS pCS)
         {
             //abc
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            // if (!ModelState.IsValid)
+            // {
+            //     return BadRequest(ModelState);
+            // }
 
-            if (id != pCS.PCID)
+            if (id != pCS.PcID)
             {
                 return BadRequest();
             }
@@ -64,15 +64,15 @@ namespace PCManager.Controllers
         [ResponseType(typeof(PCS))]
         public IHttpActionResult PostPCS(PCS pCS)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+         //   if (!ModelState.IsValid)
+         //   {
+         //       return BadRequest(ModelState);
+         //   }
 
             db.PCS.Add(pCS);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = pCS.PCID }, pCS);
+            return CreatedAtRoute("DefaultApi", new { id = pCS.PcID }, pCS);
         }
 
         // DELETE: api/PCS/5
@@ -102,7 +102,7 @@ namespace PCManager.Controllers
 
         private bool PCSExists(int id)
         {
-            return db.PCS.Count(e => e.PCID == id) > 0;
+            return db.PCS.Count(e => e.PcID == id) > 0;
         }
     }
 }

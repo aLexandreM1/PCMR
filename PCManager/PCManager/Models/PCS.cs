@@ -14,7 +14,7 @@ namespace PCManager.Models
     
     public partial class PCS
     {
-        public int PCID { get; set; }
+        public int PcID { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Mobo { get; set; }
