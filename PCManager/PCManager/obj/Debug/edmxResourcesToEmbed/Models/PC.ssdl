@@ -11,7 +11,7 @@
     <Property Name="RAM" Type="varchar" MaxLength="50" />
     <Property Name="HDD" Type="varchar" MaxLength="50" />
     <Property Name="Process" Type="varchar" MaxLength="50" />
-    <Property Name="Photo" Type="varchar(max)" />
+    <Property Name="ImgUrl" Type="varchar(max)" />
   </EntityType>
   <EntityContainer Name="PCModelStoreContainer">
     <EntitySet Name="PCS" EntityType="Self.PCS" Schema="dbo" store:Type="Tables" />

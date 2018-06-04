@@ -19,7 +19,7 @@ namespace PCManager.Controllers
         private PCManagerDBEntities db = new PCManagerDBEntities();
 
         // GET: api/PCS
-        public IQueryable<PCS> GetPCS()
+        public IEnumerable<PCS> GetPCS()
         {
             return db.PCS;
         }
@@ -28,11 +28,6 @@ namespace PCManager.Controllers
         [ResponseType(typeof(void))]
         public IHttpActionResult PutPCS(int id, PCS pCS)
         {
-            //abc
-            // if (!ModelState.IsValid)
-            // {
-            //     return BadRequest(ModelState);
-            // }
 
             if (id != pCS.PcID)
             {
@@ -64,11 +59,6 @@ namespace PCManager.Controllers
         [ResponseType(typeof(PCS))]
         public IHttpActionResult PostPCS(PCS pCS)
         {
-         //   if (!ModelState.IsValid)
-         //   {
-         //       return BadRequest(ModelState);
-         //   }
-
             db.PCS.Add(pCS);
             db.SaveChanges();
 

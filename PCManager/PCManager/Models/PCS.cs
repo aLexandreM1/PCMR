@@ -21,6 +21,6 @@ namespace PCManager.Models
         public string RAM { get; set; }
         public string HDD { get; set; }
         public string Process { get; set; }
-        public string Photo { get; set; }
+        public string ImgUrl { get; set; }
     }
 }

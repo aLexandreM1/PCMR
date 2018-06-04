@@ -11,7 +11,7 @@
           <ScalarProperty Name="RAM" ColumnName="RAM" />
           <ScalarProperty Name="HDD" ColumnName="HDD" />
           <ScalarProperty Name="Process" ColumnName="Process" />
-          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
