@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class PcComponent implements OnInit {
 
-  constructor(private pcService: PcService, private toastr : ToastrService) { }
+  constructor(private pcService: PcService, private toastr: ToastrService) { }
 
   ngOnInit() {
     this.resetForm();
@@ -34,18 +34,20 @@ export class PcComponent implements OnInit {
   }
   onSubmit(form: NgForm) {
     if (form.value.PcID == null) {
-    this.pcService.postPC(form.value)
-      .subscribe(data => {
-        this.resetForm(form);
-        this.toastr.success("New Record Added Successfully","Registro do PC");
-      })
-    }else {
+      this.pcService.postPC(form.value)
+        .subscribe(data => {
+          this.resetForm(form);
+          this.pcService.getPcList();
+          this.toastr.success("New Record Added Successfully", "Registro do PC");
+        })
+    }
+    else {
       this.pcService.putPC(form.value.PcID, form.value)
-      .subscribe(data => {
-        this.resetForm(form);
-        this.pcService.getPcList();
-        this.toastr.info('Record Updated Successfully!', 'PC Register');
-      });
+        .subscribe(data => {
+          this.resetForm(form);
+          this.pcService.getPcList();
+          this.toastr.info('Record Updated Successfully!', 'PC Register');
+        });
     }
   }
 }

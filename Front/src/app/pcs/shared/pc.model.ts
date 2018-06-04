@@ -1,5 +1,5 @@
 export class Pc {
-    PcID:number;
+    PcID: number;
     Brand:string; 
     Model:string;
     Mobo:string;
