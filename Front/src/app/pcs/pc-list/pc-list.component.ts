@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { PcService } from '../shared/pc.service'
 import { Pc } from '../shared/pc.model';
 import { ToastrService } from 'ngx-toastr';
+
 @Component({
   selector: 'app-pc-list',
   templateUrl: './pc-list.component.html',

@@ -1,21 +1,28 @@
-<table class="table table-sm table-hover">
-  <thead>
-    <th>Marca</th>
-    <th>Modelo</th>
-    <th>Placa mãe</th>
-    <th>Mem RAM</th>
-    <th>HD</th>
-    <th>Processador</th>
-    <th>Foto</th>
+<div class="form-row">
+<input class="form-control mr-sm-2 col-md-12" type="search" placeholder="Procurar" aria-label="Search" [(ngModel)]="srch">
+</div>
+<table class="table table-sm table-hover table-striped ">
+  <thead class="thead-dark">
+    <th scope="col">Marca</th>
+    <th scope="col">Modelo</th>
+    <th scope="col">Placa mãe</th>
+    <th scope="col">Mem RAM</th>
+    <th scope="col">HD</th>
+    <th scope="col">Processador</th>
+    <th scope="col">Foto</th>
+    <th scope="col"></th>
   </thead>
-  <tr *ngFor="let pc of pcService.pcList">
+  <tbody>
+  <tr scope="row" *ngFor="let pc of pcService.pcList | filter : srch">
     <td>{{pc.Brand}}</td>
     <td>{{pc.Model}}</td>
     <td> {{pc.Mobo}}
       <td> {{pc.RAM}} </td>
       <td> {{pc.HDD}} </td>
       <td> {{pc.Process}} </td>
-      <td><img src='{{pc.ImgUrl}}' width="120" height="120"></td>
+      <td>
+        <img src='{{pc.ImgUrl}}' width="80" height="80">
+      </td>
       <td>
         <a class="btn" (click)="showForEdit(pc)">
           <i class="fa fa-pencil-square-o"></i>
@@ -25,4 +32,5 @@
         </a>
       </td>
   </tr>
+</tbody>
 </table>
