@@ -9,15 +9,15 @@ import { Pc } from './pc.model'
 @Injectable()
 export class PcService {
 
-  selectedPc : Pc;
-  pcList : Pc[];
-  constructor(private http : Http) { }
+  selectedPc: Pc;
+  pcList: Pc[];
+  constructor(private http: Http) { }
 
-  postPC(pc : Pc){
+  postPC(pc: Pc) {
     var body = JSON.stringify(pc);
-    var headerOptions = new Headers({'Content-Type':'application/json'});
-    var requestOptions = new RequestOptions ({method : RequestMethod.Post,headers : headerOptions});
-    return this.http.post('http://localhost:56462/api/PC',body,requestOptions).map(x => x.json());
+    var headerOptions = new Headers({ 'Content-Type': 'application/json' });
+    var requestOptions = new RequestOptions({ method: RequestMethod.Post, headers: headerOptions });
+    return this.http.post('http://localhost:56462/api/PC', body, requestOptions).map(x => x.json());
   }
 
   putPC(id, pc) {
@@ -28,13 +28,13 @@ export class PcService {
       body,
       requestOptions).map(res => res.json());
   }
-  getPcList(){
+  getPcList() {
     this.http.get('http://localhost:56462/api/PC')
-    .map((data : Response) =>{
-      return data.json() as Pc[];
-    }).toPromise().then(x => {
-      this.pcList = x;
-    })
+      .map((data: Response) => {
+        return data.json() as Pc[];
+      }).toPromise().then(x => {
+        this.pcList = x;
+      })
   }
 
   deletePC(id: number) {

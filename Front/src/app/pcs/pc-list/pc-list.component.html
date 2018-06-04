@@ -1,7 +1,21 @@
 <table class="table table-sm table-hover">
-    <tr *ngFor="let pc of pcService.pcList">
-      <td>{{pc.Mobo}} - {{pc.Model}}</td>
-      <td>{{pc.Process}}</td>
+  <thead>
+    <th>Marca</th>
+    <th>Modelo</th>
+    <th>Placa mãe</th>
+    <th>Mem RAM</th>
+    <th>HD</th>
+    <th>Processador</th>
+    <th>Foto</th>
+  </thead>
+  <tr *ngFor="let pc of pcService.pcList">
+    <td>{{pc.Brand}}</td>
+    <td>{{pc.Model}}</td>
+    <td> {{pc.Mobo}}
+      <td> {{pc.RAM}} </td>
+      <td> {{pc.HDD}} </td>
+      <td> {{pc.Process}} </td>
+      <td><img src='{{pc.ImgUrl}}' width="120" height="120"></td>
       <td>
         <a class="btn" (click)="showForEdit(pc)">
           <i class="fa fa-pencil-square-o"></i>
@@ -10,5 +24,5 @@
           <i class="fa fa-trash-o"></i>
         </a>
       </td>
-    </tr>
-  </table>
+  </tr>
+</table>

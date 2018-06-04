@@ -25,13 +25,13 @@ export class PcComponent implements OnInit {
       Brand: '',
       Model: '',
       Mobo: '',
-      RAM: '',
       HDD: '',
       Process: '',
+      RAM: '',
       ImgUrl: ''
-
     }
   }
+
   onSubmit(form: NgForm) {
     if (form.value.PcID == null) {
       this.pcService.postPC(form.value)
