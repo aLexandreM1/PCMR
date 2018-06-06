@@ -33,7 +33,6 @@ export class PcComponent implements OnInit {
   _handleReaderLoaded(readerEvt) {
     var binaryString = readerEvt.target.result;
     this.base64textString = "data:image/jpeg;base64," + btoa(binaryString);
-    //enviar this.base64textString no lugar da ImgUrl :D
   }
 
   resetForm(form?: NgForm) {
@@ -58,7 +57,7 @@ export class PcComponent implements OnInit {
         .subscribe(data => {
           this.resetForm(form);
           this.pcService.getPcList();
-          this.toastr.success("New Record Added Successfully", "Registro do PC");
+          this.toastr.success("Novo computador cadastrado.", "Gerenciador de Computadores");
         })
     }
     else {
@@ -67,7 +66,7 @@ export class PcComponent implements OnInit {
         .subscribe(data => {
           this.resetForm(form);
           this.pcService.getPcList();
-          this.toastr.info('Record Updated Successfully!', 'PC Register');
+          this.toastr.info('Computador editado com sucesso.', 'Gerenciador de Computadores');
         });
     }
   }

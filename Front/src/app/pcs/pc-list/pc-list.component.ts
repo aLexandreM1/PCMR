@@ -19,16 +19,16 @@ export class PcListComponent implements OnInit {
   }
 
   showForEdit(pc: Pc) {
-    this.pcService.selectedPc = Object.assign({}, pc);;
+    this.pcService.selectedPc = Object.assign({}, pc);
   }
 
 
   onDelete(id: number) {
-    if (confirm('Are you sure to delete this record ?') == true) {
+    if (confirm('Você deseja deletar este computador ?') == true) {
       this.pcService.deletePC(id)
         .subscribe(x => {
           this.pcService.getPcList();
-          this.toastr.warning("Deleted Successfully", "PC Register");
+          this.toastr.warning("Computador deletado.", "Gerenciador de Computadores");
         })
     }
   }
