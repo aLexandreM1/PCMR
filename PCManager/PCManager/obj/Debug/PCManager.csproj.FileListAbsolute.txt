@@ -20,13 +20,11 @@ C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\Micr
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.AppContext.dll
-C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.Console.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.Diagnostics.Process.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.Diagnostics.StackTrace.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.IO.Compression.dll
-C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.IO.Pipes.dll
@@ -94,7 +92,6 @@ C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\Microsoft.A
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\Microsoft.AI.Web.xml
-C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\obj\Debug\PCManager.csprojResolveAssemblyReference.cache
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\obj\Debug\PCManager.csproj.CoreCompileInputs.cache
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\obj\Debug\PCManager.csproj.CopyComplete
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\obj\Debug\PCManager.dll
@@ -102,3 +99,6 @@ C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\obj\Debug\PCMan
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\System.Web.Cors.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\System.Web.Http.Cors.dll
 C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\System.Web.Http.Cors.xml
+C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\CL.DESKTOP-SFN60E7\Desktop\dev\PCMR\PCManager\PCManager\obj\Debug\PCManager.csprojResolveAssemblyReference.cache

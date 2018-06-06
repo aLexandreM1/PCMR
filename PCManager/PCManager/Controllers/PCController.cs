@@ -9,26 +9,36 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using PCManager.Models;
-using System.Web.Http.Cors;
 
 namespace PCManager.Controllers
 {
-    [EnableCors(origins: "http://localhost:4200", headers:"*",methods:"*")]
     public class PCController : ApiController
     {
-        private PCManagerDBEntities db = new PCManagerDBEntities();
+        private PCManagerDBEntities1 db = new PCManagerDBEntities1();
 
-        // GET: api/PCS
-        public IEnumerable<PCS> GetPCS()
+        // GET: api/PC
+        public IQueryable<PCS> GetPCS()
         {
             return db.PCS;
         }
 
-        // PUT: api/PCS/5
+        // GET: api/PC/5
+        [ResponseType(typeof(PCS))]
+        public IHttpActionResult GetPCS(int id)
+        {
+            PCS pCS = db.PCS.Find(id);
+            if (pCS == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pCS);
+        }
+
+        // PUT: api/PC/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutPCS(int id, PCS pCS)
         {
-
             if (id != pCS.PcID)
             {
                 return BadRequest();
@@ -55,7 +65,7 @@ namespace PCManager.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/PCS
+        // POST: api/PC
         [ResponseType(typeof(PCS))]
         public IHttpActionResult PostPCS(PCS pCS)
         {
@@ -65,7 +75,7 @@ namespace PCManager.Controllers
             return CreatedAtRoute("DefaultApi", new { id = pCS.PcID }, pCS);
         }
 
-        // DELETE: api/PCS/5
+        // DELETE: api/PC/5
         [ResponseType(typeof(PCS))]
         public IHttpActionResult DeletePCS(int id)
         {

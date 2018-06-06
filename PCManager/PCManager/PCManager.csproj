@@ -196,23 +196,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\PC.Context.cs">
+    <Compile Include="Models\PCModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PC.Context.tt</DependentUpon>
+      <DependentUpon>PCModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\PC.cs">
+    <Compile Include="Models\PCModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PC.tt</DependentUpon>
+      <DependentUpon>PCModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\PC.Designer.cs">
+    <Compile Include="Models\PCModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PC.edmx</DependentUpon>
+      <DependentUpon>PCModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\PCS.cs">
-      <DependentUpon>PC.tt</DependentUpon>
+      <DependentUpon>PCModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -223,15 +223,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\PC.Context.tt">
+    <Content Include="Models\PCModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>PC.Context.cs</LastGenOutput>
-      <DependentUpon>PC.edmx</DependentUpon>
+      <DependentUpon>PCModel.edmx</DependentUpon>
+      <LastGenOutput>PCModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\PC.tt">
+    <Content Include="Models\PCModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PC.edmx</DependentUpon>
-      <LastGenOutput>PC.cs</LastGenOutput>
+      <DependentUpon>PCModel.edmx</DependentUpon>
+      <LastGenOutput>PCModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -257,12 +257,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\PC.edmx">
+    <EntityDeploy Include="Models\PCModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>PC.Designer.cs</LastGenOutput>
+      <LastGenOutput>PCModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\PC.edmx.diagram">
-      <DependentUpon>PC.edmx</DependentUpon>
+    <Content Include="Models\PCModel.edmx.diagram">
+      <DependentUpon>PCModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
